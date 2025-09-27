@@ -1,0 +1,190 @@
+<!-- Announcement bar -->
+<div class="bar">
+  <div class="container inner">
+    <span>Handmade by two high-school seniors • Local pickup in Provo/Orem</span>
+    <a href="#shop" class="pill">Shop boards</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="container head">
+    <a href="#home" class="brand">Double Cut Woodworks</a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#process">How it's made</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#order" class="btn">Order</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- Hero -->
+<section id="home" class="section">
+  <div class="container">
+    <div>
+      <h1>Handmade cutting boards <span class="muted">built to last</span></h1>
+      <p class="lead">We design and build premium, food-safe wood boards from locally sourced hardwoods. Perfect for everyday use and unforgettable gifts.</p>
+      <div class="row gap">
+        <a href="#shop" class="btn"> Shop boards</a>
+        <a href="#order" class="btn outline">Custom order</a>
+      </div>
+      <div class="row muted small"
+         class="row gap">
+        <span> Mineral-oil finished</span>
+        <span> Food-safe & sustainable</span>
+        <span> Made in Utah</span>
+      </div>
+    </div>
+    
+       
+</section>
+
+<!-- Shop -->
+<section id="shop" class="section band">
+  <div class="container">
+    <h2 class="center">Shop Boards</h2>
+    <div id="productGrid" class="grid auto"></div>
+
+    <!-- Quote cart (simple) -->
+    <div class="card pad" style="margin-top:24px">
+      <div class="row">
+        <h3>Your Cart (quote)</h3>
+        <div class="muted">Subtotal: <strong id="subtotal">$0.00</strong></div>
+      </div>
+      <div id="cartEmpty" class="muted" style="margin-top:6px">
+        Add items above to request a custom quote or place an order.
+      </div>
+      <div id="cartTable" class="table" hidden></div>
+      <a href="#order" class="btn" style="margin-top:12px">Continue to order</a>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="section">
+  <div class="container grid two">
+    <div>
+      <h2>How it's made</h2>
+      <ol class="list">
+        <li>We select kiln-dried hardwoods from local suppliers.</li>
+        <li>Boards are glued, planed, and sanded to a smooth finish.</li>
+        <li>Each board is finished with food-safe mineral oil & beeswax.</li>
+        <li>Optional laser or hand-engraving available.</li>
+        <li>Care kit included with every order.</li>
+      </ol>
+    </div>
+    
+</section>
+
+<!-- About -->
+<section id="about" class="section soft">
+  <div class="container">
+    <div>
+      <h2>About Double Cut</h2>
+      <p class="lead">We’re two seniors in high school who turned a love of shop class into a small business. We believe useful things can also be beautiful, and we put that into every board we make.</p>
+      <p class="lead">Your purchase supports our college savings and helps us keep building (literally!). Thank you for shopping local.</p>
+    </div>
+   
+</section>
+
+<!-- Order form + mirrored cart -->
+<section id="order" class="section">
+  <div class="container grid two">
+    <div>
+      <h2>Request a Quote / Place an Order</h2>
+      <form id="orderForm" class="card pad gap">
+        <div class="grid two gap-24">
+         
+        </div>
+        <label class="field"><span class="muted">Engraving (optional)</span>
+          <input name="engraving" placeholder="e.g., Family name or logo" />
+        </label>
+        <label class="field"><span class="muted">Notes</span>
+          <textarea name="notes" placeholder="Anything else we should know?"></textarea>
+        </label>
+        <div class="grid two gap-24">
+          <input name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <input name="phone" placeholder="Phone" />
+        <label class="field"><span class="muted"></span>
+        <div class="row">
+          <a id="mailtoBtn" class="btn" href="#">Send by Email</a>
+         
+        </div>
+      </form>
+    </div>
+
+    <!-- Order-side mirrored cart -->
+    <div class="card pad" style="margin-bottom:24px">
+      <h3>Your Cart for Order</h3>
+      <div id="orderCartEmpty" class="muted" style="margin-top:6px">
+        Your cart is empty. Add items in the Shop section.
+      </div>
+      <div id="orderCartTable" class="table" hidden></div>
+      <div class="row" style="margin-top:8px">
+        <div class="muted">Subtotal:</div>
+        <strong id="orderSubtotal">$0.00</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section soft-2">
+  <div class="container grid two">
+    <div>
+      <h2>Contact</h2>
+      <p class="lead muted">Questions or bulk orders? Reach out and we'll reply after school hours.</p>
+      <ul class="gap" style="margin-top:12px">
+        <li>📞 +1 (385) 416 5672</li>
+        <li>✉️ doublecutwoodworking@gmail.com</li>
+        <li>📍 Provo, Utah</li>
+      </ul>
+    </div>
+    <div class="card pad gap">
+      
+      <a href="#order" class="btn" style="max-width:max-content">Go to Order Form</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container row">
+    <div>© <span id="year"></span> Double Cut Woodworks. All rights reserved.</div>
+    <div class="row" style="gap:24px">
+      <a href="#care">Care Guide</a>
+      <a href="#refunds">Refunds</a>
+      <a href="#privacy">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Footer pages (so the links work) -->
+<section id="care" class="section soft-3">
+  <div class="container">
+    <h2>Care Guide</h2>
+    <p class="lead">Hand-wash with mild soap, dry upright. Re-oil monthly with food-safe mineral oil. Avoid dishwasher and soaking.</p>
+  </div>
+</section>
+<section id="refunds" class="section soft-3">
+  <div class="container">
+    <h2>Refunds</h2>
+    <p class="lead">30-day returns on unused items. Custom engravings are final sale. Contact us for help.</p>
+  </div>
+</section>
+<section id="privacy" class="section soft-3">
+  <div class="container">
+    <h2>Privacy</h2>
+    <p class="lead">We only use your info to fulfill orders and respond. No spam. No resale.</p>
+  </div>
+</section>
+
+
+
+<!-- Modal root (for Customize) -->
+<div id="modalRoot" hidden></div>
